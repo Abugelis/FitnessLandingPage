@@ -1,0 +1,155 @@
+/* --------------------------- FONTS -------------------------------- */
+
+@font-face {
+    font-family: "Inter";
+    src: url("/assets/fonts/inter-regular-webfont.woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/assets/fonts/inter-semibold-webfont.woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/assets/fonts/opensans-regular-webfont.woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* ------------------ GENERAL STYLING / TYPOGRAPHY ------------------ */
+
+* {
+  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+h1, h2, h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+
+
+/* --------------------------- HERO SECTION ------------------------- */
+
+.hero-section {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section p {
+    max-width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+/* Background video of hero section */
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Overlay on top of video for better text readability */
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+/* Hero section text content */
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    text-align: center;
+    gap: 2rem;
+    z-index: 3;
+}
+
+/* Hero button */
+
+.hero-content a {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    border: 1px solid #FF2A00;
+    border-radius: 2em;
+    max-width: fit-content;
+    text-align: center;
+    margin: 2rem auto;
+    background-color: #FF2A00;
+    padding: 1em;
+    color: black;
+    text-decoration: none;
+    box-shadow: inset 0.1em 0.1em 0.3em white,
+    inset -0.1em -0.1em 0.5em black;
+}
+
+.hero-content a:hover {
+    background-color: #eb250b;
+}
+
+/* For accessibility purposes */
+
+.hero-content a:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 4px;
+}
+
+/* -------- STYLES FOR LARGER SCREENS (TABLET / DESKTOP ----------*/
+
+/* ------------------------- TABLET ------------------------------*/
+
+@media (min-width: 768px) {
+    body, a {
+        font-size: 1.5rem;
+    }
+
+    h1, h2, h3 {
+        font-size: 4rem;
+    }
+}
+
+/* ------------------------- DESKTOP ------------------------------*/
+
+@media(min-width: 1200px){
+   
+    h1, h2, h3 {
+        font-size: 5rem;
+    }
+
+    .hero-section p {
+        max-width: 800px;
+    }
+}
