@@ -42,6 +42,49 @@ h1, h2, h3 {
     font-size: 2.3rem;
 }
 
+/* ---------------------------TOP NAVIGATION ------------------------ */
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    z-index: 4;
+}
+
+.top-nav-logo {
+    height: 5em;
+    width: auto;
+}
+
+.nav-btn {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid white;
+    border-radius: 2em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+/* For accessibility purposes */
+
+.nav-btn:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 4px;
+}
+
 
 /* --------------------------- HERO SECTION ------------------------- */
 
@@ -49,7 +92,7 @@ h1, h2, h3 {
     display: flex;
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
     padding: 1rem;
     align-items: center;
@@ -75,13 +118,9 @@ h1, h2, h3 {
 
 /* Overlay on top of video for better text readability */
 
-.hero-section::after {
-    content: "";
+.hero-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
@@ -127,7 +166,24 @@ h1, h2, h3 {
     outline-offset: 4px;
 }
 
-/* -------- STYLES FOR LARGER SCREENS (TABLET / DESKTOP ----------*/
+/* -------- STYLES FOR LARGER SCREENS (TABLET / DESKTOP) ---------*/
+
+/* ----------------- LANDSCAPE PHONE -----------------------------*/
+
+@media (max-height: 420px) {
+    body{
+        font-size: 1.1rem;
+    }
+
+    h1, h2, h3 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section {
+        height: 120vh;
+        padding-top: 10rem;
+    }
+}
 
 /* ------------------------- TABLET ------------------------------*/
 
@@ -138,6 +194,10 @@ h1, h2, h3 {
 
     h1, h2, h3 {
         font-size: 4rem;
+    }
+
+    .hero-section {
+        padding-top: 8rem;
     }
 }
 
@@ -151,5 +211,9 @@ h1, h2, h3 {
 
     .hero-section p {
         max-width: 800px;
+    }
+
+    .hero-section {
+        padding-top: 6rem;
     }
 }
