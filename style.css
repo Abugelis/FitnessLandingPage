@@ -81,13 +81,15 @@ h3 {
     padding: 0.6rem 1.2rem;
     border: 1px solid white;
     border-radius: 2em;
-    color: white;
+    color: black;
+    background-color: white;
     text-decoration: none;
+    font-size: small;
 }
 
 .nav-btn:hover {
-    color: black;
-    background-color: white;
+    padding: 0.5rem 1.1rem;
+    
 }
 
 /* For accessibility purposes */
@@ -187,7 +189,8 @@ h3 {
     flex-direction: column;
     background-color: black;
     color: white;
-    padding: 1rem;
+    padding: 2rem;
+    padding-bottom: 4rem;
     gap: 2rem;
     align-items: center;
     justify-content: center;
@@ -327,6 +330,86 @@ h3 {
     padding-bottom: 1rem;
 }
 
+/* --------------------- ROADMAP SECTION ----------------------- */
+
+.roadmap-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.roadmap-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4rem;
+    max-width: 80%;
+    gap: 1rem;
+}
+
+/* Roadmap decoration line with a bubble */
+
+.roadmap-separator-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+
+.roadmap-separator-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.separator-dot-top, 
+.separator-dot-bottom {
+    background-color: #FF2A00;
+    height: 0.4rem;
+    width: 0.4rem;
+    border-radius: 1rem;
+}
+
+.separator-line-top,
+.separator-line-bottom {
+    background-color:#FF2A00;
+    height: 4rem;
+    width: 0.1rem;
+}
+
+.roadmap-separator-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.roadmap-content-wrapper {
+    max-width: 80%;
+}
+
+.roadmap-weekly-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.roadmap-weekly-block p {
+    color: #FF2A00;
+}
+
+
+
+
 /* -------- STYLES FOR LARGER SCREENS (TABLET / DESKTOP) ---------*/
 
 /* ----------------- LANDSCAPE PHONE -----------------------------*/
@@ -348,9 +431,17 @@ h3 {
         font-size: 1.5rem;
     }
 
+    .who-is-this-for-content {
+        padding-bottom: 2rem;
+    }
+
     .hero-section {
         height: 150vh;
         padding-top: 10rem;
+    }
+
+    .features-section {
+        padding-bottom: 4rem;
     }
 
     .features-card {
@@ -432,7 +523,7 @@ h3 {
     }
 
     .card-content {
-        padding-bottom: 1rem;
+        padding-top: 14rem;
     }
 
 }
@@ -467,7 +558,7 @@ h3 {
     }
 
     .who-is-this-for-section {
-        padding: 2rem 4rem 4rem 4rem;
+        padding: 2rem 4rem 6rem 4rem;
     }
 
     .who-is-this-for-header {
@@ -489,6 +580,10 @@ h3 {
         padding: 0 2em 0 2em;
     }
 
+    .features-section {
+        padding-bottom: 6rem;
+    }
+
     .features-card {
         min-height: 36rem;
         min-width: 24rem;
@@ -503,6 +598,15 @@ h3 {
     }
 
     .card-content {
-        padding-bottom: 1rem;
+        padding-top: 25rem;
+    }
+
+    .roadmap-header {
+        max-width: 30%;
+        padding-top: 2rem;
+    }
+
+    .roadmap-content-wrapper {
+        max-width: 30%;
     }
 }
