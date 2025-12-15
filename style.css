@@ -428,6 +428,15 @@ h4 {
     inset -0.1em -0.1em 0.5em black;
 }
 
+.roadmap-btn:hover {
+    background-color: #eb250b;
+}
+
+.roadmap-btn:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 4px;
+}               
+
 /* ------------------- TESTIMONIALS SECTION --------------------- */
 
 .testimonials-section{
@@ -505,6 +514,85 @@ h4 {
 }
 
 
+/* ------------------------ FAQ SECTION ------------------------- */
+
+.faq-section {
+    padding: 4rem 1rem 4rem 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.faq-header {
+    padding-bottom: 3rem;
+}
+
+.faq-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.faq-content h3 {
+    padding-bottom: 0.5rem;
+}
+
+.faq-content p {
+    padding-bottom: 1rem;
+}
+
+.faq {
+    border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+
+/* --------------------------- FOOTER --------------------------- */
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.footer-logo-flex {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.footer-logo {
+    height: 6rem;
+    width: 6rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    color: gray;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links a:hover {
+    color: rgb(255, 119, 40);
+}
+
+.footer-links a:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 4px;
+}
+
+.footer-links p {
+    padding-bottom: 1rem;
+    padding-top: 3.6rem;
+}
+
 
 /* -------- STYLES FOR LARGER SCREENS (TABLET / DESKTOP) ---------*/
 
@@ -555,6 +643,15 @@ h4 {
 
     .card-content {
         padding-bottom: 1rem;
+    }
+
+    .footer-nav {
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .footer-links p {
+        padding: 0;
     }
 
 }
@@ -716,7 +813,59 @@ h4 {
         width: 7rem;
     }
 
+    .testimonials-section {
+        padding-bottom: 4rem;
+    }
+
     .testimonials-card {
         height: 14rem;
+    }
+
+    .faq-section {
+        padding: 4rem 2rem 4rem 2rem;
+    }
+
+    .faq-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .faq-content {
+        max-width: 40%;
+    }
+
+    .footer-nav {
+        padding: 0rem;
+    }
+
+    .footer-nav p {
+        font-size: medium;
+    }
+
+    .footer-nav a {
+        font-size: medium;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .footer-links p {
+        padding: 0;        
+    }
+
+    .footer-logo-flex {
+        padding: 0 2rem;
+    }
+
+    .footer-links {
+        padding: 0 2rem;
+    }
+
+    .footer-logo {
+        height: 6rem;
+        width: 6rem;
     }
 }
