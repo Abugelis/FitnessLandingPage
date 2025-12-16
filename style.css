@@ -41,7 +41,7 @@ body{
     padding-bottom: env(safe-area-inset-bottom);
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -529,6 +529,7 @@ h4 {
     align-items: center;
     justify-content: center;
     text-align: left;
+    background-color: white;
 }
 
 .faq-header {
