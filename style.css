@@ -30,10 +30,18 @@
     padding: 0;
 }
 
+html, body {
+    background-color: black;
+}
+
 body{
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 1rem;
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    overflow: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -110,7 +118,7 @@ h4 {
     display: flex;
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100svh;
     overflow: hidden;
     padding: 1rem;
     align-items: center;
@@ -620,7 +628,7 @@ h4 {
     }
 
     .hero-section {
-        height: 150vh;
+        height: 150svh;
         padding-top: 10rem;
     }
 
