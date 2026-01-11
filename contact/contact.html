@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+        <link rel="icon" type="image/icon" href="../assets/icons/iron_fitness_icon.ico">
+        <link rel="stylesheet" href="../style.css"/>
+        <title>Iron Fitness</title>
+    </head>
+    <body>
+        <header>
+            <nav class="top-nav"> 
+                <a href="../index.html" style="margin: 0 auto;"><img src="../assets/images/Iron_Fitness_Logo.png" class="top-nav-logo" alt="Iron Fitness Logo"></a>
+            </nav>
+        </header>
+        
+        <section class="contact-content-wrapper">
+            <section class="hero-banner">
+                <div class="hero-media">
+                    <picture>
+                        <source 
+                            srcset="../assets/images/card-1.jpg"
+                            media="(min-width: 1024px)">
+                        <source
+                            srcset="../assets/images/hero-banner.jpg"
+                            media="(orientation: landscape)">
+                        <source 
+                            srcset="../assets/images/hero-banner.jpg"
+                            media="(min-width: 768px)">
+                        <img src="../assets/images/card-1.jpg" alt="Pull-ups">
+                    </picture>
+                </div>
+                <div class="banner-overlay"></div>
+                <div class="banner-content">
+                    <h1>UNLOCK YOUR FULL POTENTIAL</h1>
+                    <p>
+                        Train with purpose and structure<br>
+                        Get faster, stronger, and more resilient<br>
+                        Stay accountable with expert guidance<br>
+                        Peak when it matters most
+                    </p>
+                </div>
+            </section>
+
+            <section class="form-content">
+                <div class="form-header">
+                    <h2>START YOUR TRAINING TODAY</h2>
+                    <p>Tell us a bit about yourself and we’ll get back to you with next steps</p>
+                </div>
+                <form id="form"
+                action="https://formspree.io/f/mdakqwzq"
+                method="POST">
+                
+                    <div class="form-field">
+                        <label for="name">First name</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="name">Last name</label>
+                        <input type="text" name="surname" id="surname" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="name">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-field">
+                        <label for="form-experience">Training experience</label>
+                        <select id="form-experience" required>
+                            <option value="">Select your level</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-field">
+                        <label for="form-goals">Primary goal</label>
+                        <select id="form-goals" name="goals" required>
+                            <option value="">Select your goal</option>
+                            <option value="muscle">Build muscle</option>
+                            <option value="strength">Get stronger</option>
+                            <option value="conditioning">Improve conditioning</option>
+                            <option value="fatloss">Lose fat</option>
+                            <option value="fitness">General fitness</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="form-availability">Your availability</label>
+                        <select id="form-availability" required>
+                            <option value="">How many days per week can you train</option>
+                            <option value="two-three">2-3</option>
+                            <option value="three-four">3-4</option>
+                            <option value="five-plus">5+</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="form-message">Anything you’d like us to know?</label>
+                        <textarea id="form-message"></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <button id="form-btn">Submit</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+
+        <footer class="footer-nav">
+            <div class="footer-logo-flex">
+                <a href="../index.html"><img src="../assets/images/Iron_Fitness_Logo.png" class="footer-logo" alt="Iron Fitness Logo"></a>
+                <p>© 2025 · Concept project by E.G.</p>
+            </div>
+            <div class="footer-decor-line"></div>
+            <div class="footer-links">
+                <a href="../legal/terms-conditions.html">Terms & Conditions</a>
+                <div class="footer-links-separator"></div>
+                <a href="../legal/privacy-policy.html">Privacy Policy</a>
+            </div>    
+        </footer>
+    </body>
+</html>
